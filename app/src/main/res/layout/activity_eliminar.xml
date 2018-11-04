@@ -72,7 +72,7 @@
         tools:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txtcorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -85,7 +85,7 @@
         tools:textSize="18sp" />
 
     <Button
-        android:id="@+id/btnelimina"
+        android:id="@+id/btneliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -93,7 +93,7 @@
         android:layout_marginTop="28dp"
         android:text="Eliminar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
 
     <Button
         android:id="@+id/btncancela"
@@ -103,8 +103,8 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="28dp"
         android:text="Cancelar"
-        app:layout_constraintStart_toEndOf="@+id/btnelimina"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintStart_toEndOf="@+id/btneliminar"
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
 
     <Button
         android:id="@+id/btnregresar"
@@ -119,6 +119,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.323"
         app:layout_constraintStart_toEndOf="@+id/btncancela"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
 
 </android.support.constraint.ConstraintLayout>
