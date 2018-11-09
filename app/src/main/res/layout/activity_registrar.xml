@@ -121,4 +121,13 @@
         app:layout_constraintHorizontal_bias="0.323"
         app:layout_constraintStart_toEndOf="@+id/btncancela"
         app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
+
+    <TextView
+        android:id="@+id/lblinformacion"
+        android:layout_width="177dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/btncancela"
+        tools:layout_editor_absoluteX="104dp" />
 </android.support.constraint.ConstraintLayout>

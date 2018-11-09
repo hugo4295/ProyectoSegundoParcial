@@ -31,7 +31,7 @@ public class CDatos {
     }
 
     public String toString(){
-        return Nombre + "," + Edad + "," + Correo;
+        return Nombre + "," + Edad + "," + Correo + "\n";
     }
 
 }
