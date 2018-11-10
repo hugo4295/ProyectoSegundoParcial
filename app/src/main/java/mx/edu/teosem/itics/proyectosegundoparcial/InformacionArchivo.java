@@ -22,7 +22,7 @@ import static android.os.Environment.getExternalStorageDirectory;
 public class InformacionArchivo {
     List<CDatos> informacion = new ArrayList();
     public String informacionDatos;
-    String[] cadenaArreglo = new String[3];
+    private String[] cadenaArreglo;
 
     private Boolean TarjetaExternaEscritura(){
         String estado = Environment.getExternalStorageState();
@@ -106,6 +106,21 @@ public class InformacionArchivo {
             estado = false;
         }
         return estado;
+    }
+
+    public void GenerarArreglo(){
+        String[] arregloInformacion;
+
+        arregloInformacion = new String[informacion.size()*3];
+        int contador=0;
+        for(Object contenido: informacion){
+            CDatos elementos = (CDatos) contenido;
+            arregloInformacion[contador] = elementos.getNombre();
+            arregloInformacion[contador+1] = String.valueOf(elementos.getEdad());
+            arregloInformacion[contador+2] = elementos.getCorreo();
+            contador+=3;
+        }
+        cadenaArreglo = arregloInformacion;
     }
 
     public String[] RegresaArreglo(){

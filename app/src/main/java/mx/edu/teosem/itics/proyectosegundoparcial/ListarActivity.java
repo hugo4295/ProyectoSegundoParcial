@@ -16,6 +16,14 @@ public class ListarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listar);
 
         gvdatos = (GridView) findViewById(R.id.gvdatos);
+        InformacionArchivo conexion = new InformacionArchivo();
 
+        if (conexion.LeerContenido()) {
+            conexion.GenerarArreglo();
+            String[] arreglo = conexion.RegresaArreglo();
+
+            ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arreglo);
+            gvdatos.setAdapter(adaptador);
+        }
     }
 }
